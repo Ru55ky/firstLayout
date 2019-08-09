@@ -414,15 +414,19 @@
 /*лес и гора*/
 
 .emailInForest{
-  width: 1400;
-  max-width: 1920px;
-  margin: 0;
-  padding: 0%;
+  max-width: 100%;
+  height: 500px;
 }
 
 .forest{
-  width: 100%;
-  height: 350px;
+  height: 370px;
+  max-width: 100%;  
+  display: block;
+  background-image: url(img/NewForest.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 0;
+  margin-right: 0;
 }
 /*инпут на bg леса*/
 .item-inp{
