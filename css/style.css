@@ -496,10 +496,12 @@
 }
 /*3 Галерея*/
 .third-gallery{
-  width: 1400px;
+  max-width: 1400px;
   height: 500px;
   display: flex;
 }
+
+
 
 .first-gall-item{
   display: flex;
@@ -577,7 +579,6 @@
   color: #b8b8b8;
 }
 
-
 /*view*/
 
 .link-item-first{
@@ -600,6 +601,47 @@
   position: absolute;
   text-decoration: none;
   color: #3e3e3e;
+}
+/*адаптация под 1920px ширины*/
+@media screen and (min-width: 1900px)
+and (max-width: 5000px){
+  .desc-third-gall-item-first{
+    margin-top: 28%;
+  }
+  .desc-third-gall-item-second{
+    margin-top: 30%;
+  }
+  .link-item-first{
+    margin-top: 33.5%;
+  }
+  .desc-third-gall-third{
+    margin-top: 28%;
+    margin-left: 30%;
+  }
+  .desc-third-gall-fourth{
+    margin-top: 30%;
+    margin-left: 30%;
+  }
+  .link-item-second{
+    margin-top: 33.5%;
+    margin-left: 30%;
+  }
+  .desc-third-gall-fifth{
+    margin-top: 28%;
+    margin-left: 53%;
+  }
+  .desc-third-gall-sixth{
+    margin-top: 30%;
+    margin-left: 53%;
+  }
+  .link-item-third{
+    margin-top: 33.5%;
+    margin-left: 53%;
+  }
+
+  .third-gallery{
+    margin-left: 10%;
+  }
 }
 /*Блок с видео*/
 .video-item-first{
