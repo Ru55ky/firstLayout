@@ -12,7 +12,9 @@
   src: url(font/PlayfairDisplay-Italic.ttf);
 }
 
-
+body{
+  margin: 0 auto;
+}
 /*бургер меню*/
 .burger {
   display: block;
@@ -120,12 +122,9 @@
 }
 /*Галерея*/
 .main-gallery{
-  display: flex;
   max-width: 1400px;
-  min-width: 1400px;
-  width: 1400px;
-  height: auto;
-  margin-top: 20%;
+  margin-top: 15%;
+  position: absolute;
 }
 
 
@@ -141,7 +140,6 @@
 }
 /*картинки*/
 .gallery-item-two{
-  
   position: absolute;
   margin-top: -20px;
   margin-left: 60px;
@@ -171,10 +169,15 @@
 
 
 /*фоновый цвет в галерее*/
-.bg{
-  margin-top: -15%;
- margin-left: -15%;
- 
+
+.desktop-bg-first{
+  height: 800px;
+  max-width: 100%;
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 12%;
+  
 }
 
 /*тонкая полоска снизу bg первой галереи*/
@@ -579,8 +582,7 @@
   color: #b8b8b8;
 }
 
-/*view*/
-
+/*view ссылки пустышки*/
 .link-item-first{
   margin-top: 38%;
   margin-left: 7%;
@@ -602,7 +604,7 @@
   text-decoration: none;
   color: #3e3e3e;
 }
-/*адаптация под 1920px ширины*/
+/*адаптация подписей под галереей под 1920px ширины*/
 @media screen and (min-width: 1900px)
 and (max-width: 5000px){
   .desc-third-gall-item-first{
@@ -643,6 +645,7 @@ and (max-width: 5000px){
     margin-left: 10%;
   }
 }
+
 /*Блок с видео*/
 .video-item-first{
   font-family: "Montserrat";
@@ -777,4 +780,67 @@ and (max-width: 5000px){
   transform: scale(0.5);
   display: block;
   margin-top: 5%;
+}
+@media screen and (max-width: 1365px) 
+and (min-width: 400px){
+  .desc-third-gall-item-first{
+    margin-top: 39%;
+    position: absolute;
+  }
+  .desc-third-gall-item-second{
+    margin-top: 43%;
+    position: absolute;
+  }
+  .link-item-first{
+    margin-top: 46.5%;
+    position: absolute;
+  }
+  .desc-third-gall-third{
+    margin-top: 39.5%;
+    margin-left: 50%;
+  }
+  .desc-third-gall-fourth{
+    margin-top: 42%;
+    margin-left: 50%;
+  }
+  .link-item-second{
+    margin-top: 45.5%;
+    margin-left: 50%;
+  }
+  .desc-third-gall-fifth{
+    margin-top: 40%;
+    margin-left: 76%;
+  }
+  .desc-third-gall-sixth{
+    margin-top: 42%;
+    margin-left: 76%;
+  }
+  .link-item-third{
+    margin-top: 45.5%;
+    margin-left: 76%;
+  }
+  .third-gallery{
+    margin-left: 5%;
+    position: absolute;
+    margin-top: -15%;
+  }
+  .line-und-bg{
+    display: none;
+  }
+  .container-video{
+    margin-top: 20%;
+  }
+}
+@media screen and (min-width: 1600px)
+and (max-width: 5000px){
+  .main-gallery{
+    align-items: center;
+    
+    transform: scale(1.1);
+    margin-top: 10%;
+  }
+  .desktop-bg-first{
+    height: 850px;
+    
+  }
 }
