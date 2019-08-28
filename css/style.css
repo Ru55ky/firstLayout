@@ -123,7 +123,7 @@ body{
 /*Галерея*/
 .main-gallery{
   max-width: 1400px;
-  margin-top: 15%;
+  margin-top: 17%;
   position: absolute;
 }
 
@@ -158,7 +158,6 @@ body{
 }
 /*картинки*/
 .gallery-item-four{
-  
   width: 400px;
   height: 420px;
   box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
@@ -171,13 +170,12 @@ body{
 /*фоновый цвет в галерее*/
 
 .desktop-bg-first{
-  height: 800px;
+  height: 1000px;
   max-width: 100%;
-  background-image: url(img/bg.jpg);
+  background-image: url(img/backgroundd.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 12%;
-  
 }
 
 /*тонкая полоска снизу bg первой галереи*/
@@ -199,12 +197,16 @@ body{
   transform: scale(0.8);
 }
 
+.block-pop{
+  max-width: 600px;
+  position: relative;
+}
 .pop{
   font-size: 65px;
   font-family: 'Playfair Display';
   text-transform: uppercase;
-  margin-top: -43%;
-  margin-left: 20.5%;
+  margin-top: -104%;
+  margin-left: 49%;
   position: absolute;
   color: #fff;
 }
@@ -831,16 +833,39 @@ and (min-width: 400px){
     margin-top: 20%;
   }
 }
-@media screen and (min-width: 1600px)
+@media screen and (min-width: 1800px)
 and (max-width: 5000px){
   .main-gallery{
-    align-items: center;
-    
-    transform: scale(1.1);
-    margin-top: 10%;
+    margin-left: 12%;
+    transform: scale(1.3);
+    margin-top: 17%;
+    margin-left: 2%;
   }
   .desktop-bg-first{
-    height: 850px;
-    
+    height: 1150px;
+    margin-top: 10%;
+  }
+  .block-pop{
+    margin-left: 25%;
+    max-width: 900px;
+  }
+  .pop{
+    margin-top: -70%;
+    margin-left: -2%;
+    position: absolute;
+  }
+  .popP{
+    margin-top: -2%;
+    margin-left: 45%;
+    position: absolute;
+  }
+  .secondary-gall{
+    margin-left: 10%;
+  }
+  .mob-number{
+    margin-left: -1%;
+  }
+  .adr-str{
+    margin-left: -1%;
   }
 }
