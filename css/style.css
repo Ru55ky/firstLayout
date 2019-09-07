@@ -166,7 +166,6 @@ body{
   position: absolute;
 }
 
-
 /*фоновый цвет в галерее*/
 
 .desktop-bg-first{
@@ -191,9 +190,11 @@ body{
 }
 /*кнопка в галерее*/
 .follow{
-  margin-top: -52%;
-  margin-left: 79.5%;
+  margin: 0 auto;
+  margin-top: -55%;
+  margin-left: 85%;
   position: absolute;
+  background-size: cover;
   transform: scale(0.8);
 }
 
@@ -416,37 +417,35 @@ body{
   color: #95cac5;
 }
 
-/*лес и гора*/
-
+/*Background лес и гора + инпут с текстом*/
 .emailInForest{
-  max-width: 100%;
-  height: 500px;
-}
+  display: flex; 
+  flex-direction: row;
+  padding: 0px;
+  height: 420px;
 
+}
 .forest{
-  height: 370px;
-  max-width: 100%;  
-  display: block;
-  background-image: url(img/NewForest.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-left: 0;
-  margin-right: 0;
+max-width: 100%;
+height: 400px;
+background-size: contain;
+margin: 0 auto;
+position: absolute;
 }
 /*инпут на bg леса*/
 .item-inp{
+  align-self: center;
   width: 450px;
-  position: absolute;
-  margin-left: -70%;
-  margin-top: 10.3%;
+  margin-left: 30%;
   height: 52px;
   border: none;
+  opacity: 1;
+  z-index: 1;
+  margin-top: 5%;
 }
 .item-inp:hover{
-  box-shadow: 0 0 2px 0 #425dd8;
+  box-shadow: 0 0 2px 0 #83bbb6;
 }
-
-
 /*шрифт над инпутом*/
 .emailInForest span {
   font-family: 'Playfair Display';
@@ -457,6 +456,7 @@ body{
   position: absolute;
   color: #a19c98;
 }
+/*шрифт над инпутом*/
 .emailInForest p {
   font-family: 'Montserrat';
   font-size: 17px;
@@ -467,37 +467,31 @@ body{
   margin-left: 35.5%;
   color: #333333;
 }
-.emailInForest a {
-  width: 66px;
-  height: 55px;
-  position: absolute;
-  margin-left: 60%;
-  margin-top: -14.6%;
-  background-image: url(css/img/Envelope.jpg);
+.Subscribe /*картинка с письмом*/{
+  margin: 0 auto;
+  z-index: 1;
+  align-self: center;
+  margin-left: 1%;
+  margin-top: 5%;
+  height: 65px;
 }
-.emailInForest a:hover{
+.emailInForest .Subscribe:hover{
   box-shadow: 0 0 5px 0 #83bbb6;
 }
-
+/*нижняя полоска под картинкой с лесом*/
 .line-und-bg{
   height: 70px;
-  width: 1.5px;
+  width: 1.4px;
   background-color: #222222;
-  position: absolute;
-  margin-top: -0.3%;
-  margin-left: 50%;
   transform: rotate(180deg);
-  position: absolute;
+  justify-content: center;
 }
-
 /*bg*/
 .new-bg{
-
   width: 720px;
   height: 720px;
   position: absolute;
   margin-top: 50%;
-
 }
 /*3 Галерея*/
 .third-gallery{
@@ -505,8 +499,6 @@ body{
   height: 500px;
   display: flex;
 }
-
-
 
 .first-gall-item{
   display: flex;
@@ -607,7 +599,7 @@ body{
   color: #3e3e3e;
 }
 /*адаптация подписей под галереей под 1920px ширины*/
-@media screen and (min-width: 1900px)
+@media screen and (min-width: 1700px)
 and (max-width: 5000px){
   .desc-third-gall-item-first{
     margin-top: 28%;
@@ -642,7 +634,6 @@ and (max-width: 5000px){
     margin-top: 33.5%;
     margin-left: 53%;
   }
-
   .third-gallery{
     margin-left: 10%;
   }
@@ -698,7 +689,6 @@ and (max-width: 5000px){
   text-decoration: none;
 }
 .foot-item-third{
-  
   font-family: 'Montserrat';
   font-size: 18px;
   color: #333333;
@@ -783,7 +773,7 @@ and (max-width: 5000px){
   display: block;
   margin-top: 5%;
 }
-@media screen and (max-width: 1365px) 
+@media screen and (max-width: 1366px) 
 and (min-width: 400px){
   .desc-third-gall-item-first{
     margin-top: 39%;
@@ -799,38 +789,38 @@ and (min-width: 400px){
   }
   .desc-third-gall-third{
     margin-top: 39.5%;
-    margin-left: 50%;
+    margin-left: 45%;
   }
   .desc-third-gall-fourth{
     margin-top: 42%;
-    margin-left: 50%;
+    margin-left: 45%;
   }
   .link-item-second{
     margin-top: 45.5%;
-    margin-left: 50%;
+    margin-left: 45%;
   }
   .desc-third-gall-fifth{
     margin-top: 40%;
-    margin-left: 76%;
+    margin-left: 81%;
   }
   .desc-third-gall-sixth{
     margin-top: 42%;
-    margin-left: 76%;
+    margin-left: 81%;
   }
   .link-item-third{
     margin-top: 45.5%;
-    margin-left: 76%;
+    margin-left: 81%;
   }
   .third-gallery{
-    margin-left: 5%;
+    margin-left: 4%;
+    margin-top: 5%;
     position: absolute;
-    margin-top: -15%;
-  }
-  .line-und-bg{
-    display: none;
   }
   .container-video{
-    margin-top: 20%;
+    margin-top: 40%;
+  }
+  .forest{
+    max-width: 120%;
   }
 }
 @media screen and (min-width: 1800px)
@@ -869,3 +859,60 @@ and (max-width: 5000px){
     margin-left: -1%;
   }
 }
+@media (max-width: 1160px) {
+  .forest{
+    max-width: 140%;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+/*POPUP*/
+.container-popup{
+  display: none;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  top: 0px;
+  position: fixed;
+  z-index: 1;
+}
+.container-popup .popup{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px auto 0px auto;
+  width: 500px;
+  height: 400px;
+  padding: 15px;
+  background-color: #83bbb6;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000;
+}
+.popup-input{
+  align-self: center;
+  width: 240px;
+  height: 30px;
+}
+.popup-input:hover{
+  box-shadow: 0 0 12px 0 rgba(151, 151, 151, 0.61);
+}
+.btn-popup{
+  width: 120px;
+  height: 40px;
+  background: #fff;
+  align-self: flex-end;
+  justify-self: flex-end;
+  border-radius: 5px;
+  border: none;
+}
+.btn-popup:hover{
+  box-shadow: 0px 0px 12px 0 rgba(63, 63, 63, 0.37);
+}
+.popup-close{
+ display: flex;
+}
+/*POPUP close*/
